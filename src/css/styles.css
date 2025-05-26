@@ -16,3 +16,79 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+/* TIMER STYLES */
+.timer {
+  display: flex;
+
+  justify-content: center;
+  gap: 25px;
+  margin-top: 32px;
+}
+.value {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+.label {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2e2f42;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input {
+  border: 1px solid #808080;
+  background: #fff;
+  width: 272px;
+  height: 40px;
+  border-radius: 4px;
+}
+input:focus,
+input:hover {
+  border-color: #111;
+}
+input:active {
+  border-color: #4e75ff;
+}
+input:disabled {
+  background: #fafafa;
+  border-color: #808080;
+}
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 75px;
+  height: 40px;
+  background: #4e75ff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+button:hover,
+button:focus {
+  background: #6c8cff;
+  color: #fff;
+}
+
+button:disabled {
+  background: #cfcfcf;
+  color: #fff;
+  cursor: not-allowed;
+}
+button:active {
+  transform: scale(0.98);
+}
